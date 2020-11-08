@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane fx:id="paneload" layoutX="304.0" layoutY="14.0" prefHeight="287.0" prefWidth="362.0" style="-fx-background-color: #b2bec3;">
+         <children>
+            <Button fx:id="selectSort" layoutX="293.0" layoutY="251.0" mnemonicParsing="false" onAction="#selectSort" text="select" visible="false">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <RadioButton fx:id="USD" layoutX="20.0" layoutY="45.0" mnemonicParsing="false" text="USD">
+               <font>
+                  <Font name="Noto Serif Georgian Regular" size="16.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="RUB" layoutX="20.0" layoutY="75.0" mnemonicParsing="false" text="RUB">
+               <font>
+                  <Font name="Noto Serif Georgian Regular" size="16.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="EUR" layoutX="20.0" layoutY="105.0" mnemonicParsing="false" text="EUR">
+               <font>
+                  <Font name="Noto Serif Georgian Regular" size="16.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="AtoZ" layoutX="20.0" layoutY="135.0" mnemonicParsing="false" text="name of currency from A to Z">
+               <font>
+                  <Font name="Noto Serif Georgian Regular" size="16.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="ZtoA" layoutX="20.0" layoutY="165.0" mnemonicParsing="false" text="name of currency from Z to A">
+               <font>
+                  <Font name="Noto Serif Georgian Regular" size="16.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="IDl" layoutX="20.0" layoutY="195.0" mnemonicParsing="false" text="ID from low to high">
+               <font>
+                  <Font name="Noto Serif Georgian Regular" size="16.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="IDh" layoutX="20.0" layoutY="225.0" mnemonicParsing="false" text="ID from high to low">
+               <font>
+                  <Font name="Noto Serif Georgian Regular" size="16.0" />
+               </font></RadioButton>
+            <Label layoutX="20.0" layoutY="15.0" prefHeight="26.0" prefWidth="117.0" text="Sort rates by:">
+               <font>
+                  <Font name="Noto Serif Georgian Regular" size="16.0" />
+               </font></Label>
+         </children></Pane>
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="287.0" prefWidth="280.0" style="-fx-background-color: #b2bec3;">
+         <children>
+            <RadioButton fx:id="today" layoutX="25.0" layoutY="45.0" mnemonicParsing="false" text="today" toggleGroup="$tglgroupLoad">
+               <font>
+                  <Font name="Noto Serif Georgian Regular" size="16.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="tglgroupLoad" />
+               </toggleGroup></RadioButton>
+            <RadioButton fx:id="yesterday" layoutX="25.0" layoutY="75.0" mnemonicParsing="false" text="yesterday" toggleGroup="$tglgroupLoad">
+               <font>
+                  <Font name="Noto Serif Georgian Regular" size="16.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="weekAgo" layoutX="25.0" layoutY="105.0" mnemonicParsing="false" text="week ago" toggleGroup="$tglgroupLoad">
+               <font>
+                  <Font name="Noto Serif Georgian Regular" size="16.0" />
+               </font></RadioButton>
+            <Button id="apply" fx:id="selectLoad" layoutX="210.0" layoutY="247.0" mnemonicParsing="false" onAction="#selectLoad" text="select">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <RadioButton fx:id="yearAgo" layoutX="25.0" layoutY="135.0" mnemonicParsing="false" text="year ago" toggleGroup="$tglgroupLoad">
+               <font>
+                  <Font name="Noto Serif Georgian Regular" size="16.0" />
+               </font></RadioButton>
+            <Label layoutX="20.0" layoutY="15.0" text="Which rates your wanna load:">
+               <font>
+                  <Font name="Noto Serif Georgian Regular" size="16.0" />
+               </font></Label>
+         </children></Pane>
+      <TextArea fx:id="textout" editable="false" layoutX="16.0" layoutY="364.0" prefHeight="299.0" prefWidth="650.0">
+         <font>
+            <Font name="Noto Serif Georgian Regular" size="17.0" />
+         </font></TextArea>
+      <Label fx:id="data" layoutX="18.0" layoutY="323.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

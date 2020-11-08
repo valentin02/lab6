@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="file://$PATH_TO_FX$" />
+      <root url="jar://$PROJECT_DIR$/src/lib/jackson-annotations-2.11.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lib/jackson-core-2.11.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lib/jackson-databind-2.11.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lib/lombok.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <NATIVE>
+      <root url="file://$PATH_TO_FX$" />
+    </NATIVE>
+    <SOURCES>
+      <root url="file://$PATH_TO_FX$" />
+    </SOURCES>
+    <jarDirectory url="file://$PATH_TO_FX$" recursive="false" />
+    <jarDirectory url="file://$PATH_TO_FX$" recursive="false" type="SOURCES" />
+  </library>
+</component>
